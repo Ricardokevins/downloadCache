@@ -335,33 +335,94 @@ async def non_stream_response(payload: Dict, headers: Dict, model: str) -> ChatC
 if __name__ == "__main__":
     import uvicorn
     
-    if not os.path.exists("models.json"):
-        dummy_models = {
-            "data": [
-                {
+    
+    dummy_models = {
+        "data": [
+            {
+                "id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+                "object": "model",
+                "created": int(time.time()),
+                "owned_by": "anthropic",
+                "name": "Claude Sonnet 4",
+                "openai": {
                     "id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
                     "object": "model",
                     "created": int(time.time()),
-                    "owned_by": "anthropic",
+                    "owned_by": "openai",
+                    "connection_type": "external"
+                },
+                "info": {
+                    "id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
                     "name": "Claude Sonnet 4",
-                    "openai": {
-                        "id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
-                        "object": "model",
-                        "created": int(time.time()),
-                        "owned_by": "openai",
-                        "connection_type": "external"
-                    },
-                    "info": {
-                        "id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
-                        "name": "Claude Sonnet 4",
-                        "meta": {"capabilities": {"vision": True}},
-                        "is_active": True
-                    }
+                    "meta": {"capabilities": {"vision": True}},
+                    "is_active": True
                 }
-            ]
-        }
-        with open("models.json", "w", encoding="utf-8") as f:
-            json.dump(dummy_models, f, indent=2)
+            },
+            {
+                "id": "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                "object": "model",
+                "created": int(time.time()),
+                "owned_by": "anthropic",
+                "name": "Claude Sonnet 3.7",
+                "openai": {
+                    "id": "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                    "object": "model",
+                    "created": int(time.time()),
+                    "owned_by": "openai",
+                    "connection_type": "external"
+                },
+                "info": {
+                    "id": "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
+                    "name": "Claude Sonnet 3.7",
+                    "meta": {"capabilities": {"vision": True}},
+                    "is_active": True
+                }
+            },
+            {
+                "id": "azure/o3-mini",
+                "object": "model",
+                "created": int(time.time()),
+                "owned_by": "anthropic",
+                "name": "o3-mini",
+                "openai": {
+                    "id": "azure/o3-mini",
+                    "object": "model",
+                    "created": int(time.time()),
+                    "owned_by": "openai",
+                    "connection_type": "external"
+                },
+                "info": {
+                    "id": "azure/o3-mini",
+                    "name": "o3-mini",
+                    "meta": {"capabilities": {"vision": True}},
+                    "is_active": True
+                }
+            },
+            {
+                "id": "azure/gpt-4.1",
+                "object": "model",
+                "created": int(time.time()),
+                "owned_by": "anthropic",
+                "name": "gpt-4.1",
+                "openai": {
+                    "id": "azure/gpt-4.1",
+                    "object": "model",
+                    "created": int(time.time()),
+                    "owned_by": "openai",
+                    "connection_type": "external"
+                },
+                "info": {
+                    "id": "azure/gpt-4.1",
+                    "name": "gpt-4.1",
+                    "meta": {"capabilities": {"vision": True}},
+                    "is_active": True
+                }
+            }
+        ]
+    }
+    with open("models.json", "w", encoding="utf-8") as f:
+        json.dump(dummy_models, f, indent=2)
+
     
     print("Starting Typethink OpenAI API server...")
     print("Endpoints:")
