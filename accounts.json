@@ -1,0 +1,22 @@
+[
+    {
+        "websocket_cookies" : {
+            "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTJjMjI0LWFhMDctNDRlMy1hMTc3LWU0ZWM5NWZmZmNhMiIsImV4cCI6MTc0ODkzOTQyOX0.MKEsnHN0IUMT-9yljx-NvDH3cYMYqAk7h-UORh2W6KE"
+        }
+    },
+    {
+        "websocket_cookies" : {
+            "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzhhOWYzLTRhNDQtNGNkMi04NTlhLWExY2Q4NmJhOTBlMSIsImV4cCI6MTc0ODk0MDYwNH0.1avNCaNODkU2-E0fx5yVMAZOJc4BSdR5NqWH-xxdW6w"
+        }
+    },
+    {
+        "websocket_cookies" : {
+            "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJiYjgzNzEzLWYwMzAtNDYyYi05NDhjLTk3MmM5ZjM4YzFhNSIsImV4cCI6MTc0ODk0MzExMH0.FBZLoxLKvQ2tyVDQ_3WwqUFMCrYfIWbvzgqV3P8PfKg"
+        }
+    },
+    {
+        "websocket_cookies" : {
+            "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImM4MTM0Yjk4LTA2MjMtNDVlOC1hZTMwLTFjY2RjZjRkZTJmOCIsImV4cCI6MTc0ODk0MzQwN30.7Rj_hmy2-Zh8lqzXxGkbs_5vtUhtqFsRFG-_AHCYQK0"
+        }
+    }
+]

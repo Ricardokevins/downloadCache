@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+      "object": "model",
+      "created": 1748335413,
+      "owned_by": "anthropic",
+      "name": "Claude Sonnet 4",
+      "openai": {
+        "id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+        "object": "model",
+        "created": 1748335413,
+        "owned_by": "openai",
+        "connection_type": "external"
+      },
+      "info": {
+        "id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+        "name": "Claude Sonnet 4",
+        "meta": {
+          "capabilities": {
+            "vision": true
+          }
+        },
+        "is_active": true
+      }
+    }
+  ]
+}
