@@ -368,5 +368,12 @@ if __name__ == "__main__":
     print("  GET  /v1/models")
     print("  POST /v1/chat/completions")
     print("\nUse client API keys (sk-xxx) in Authorization header")
-    
-    uvicorn.run(app, host="0.0.0.0", port=8100)
+
+    try:
+        import uvicorn
+        uvicorn.run(app, host="0.0.0.0", port=8100)
+    except Exception as e:
+        print(f"Error starting server: {e}")
+        # 使用命令行方式
+        import os
+        os.system("python -m uvicorn test_typeai:app --host 0.0.0.0 --port 8100")
